@@ -2,7 +2,7 @@
 
 智慧校园大屏项目
 
-![Image text](https://github.com/zc568917346/school-dashboard/blob/master/sketch/screen.png)
+![Image text](https://github.com/zc568917346/school-dashboard/blob/master/sketch/screen.jpg)
 
 # 项目特点
 
