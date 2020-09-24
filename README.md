@@ -2,6 +2,8 @@
 
 智慧校园大屏项目
 
+![Image text](https://github.com/zc568917346/school-dashboard/blob/master/sketch/screen.png)
+
 # 项目特点
 
 1.适应所有电脑，电视等分辨率（暂不支持 1：1 以下的分辨率） 
