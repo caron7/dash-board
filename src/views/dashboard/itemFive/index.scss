@@ -1,0 +1,242 @@
+.itemFive {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .tabsContent {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    .tabs {
+      background: #08304ab6;
+      display: flex;
+      border-radius: 20px;
+      padding: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.144);
+      & > div {
+        width: 80px;
+        height: 25px;
+        border-radius: 15px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.589);
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0);
+      }
+      .selected {
+        border: 1px solid rgba(255, 255, 255, 0.144);
+        color: #fff;
+        background: #00e5ff63;
+      }
+    }
+  }
+
+  .bimPng {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .scene {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .cameraPng {
+    width: 40px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+
+    &.one {
+      left: 28%;
+      bottom: 26%;
+    }
+
+    &.two {
+      left: 60%;
+      top: 4%;
+    }
+
+    &.trhee {
+      right: 19%;
+      top: 66%;
+    }
+
+    &.four {
+      left: 28%;
+      top: 13%;
+    }
+
+    &.five {
+      left: 53%;
+      top: 45%;
+    }
+
+    &.six {
+      left: 13%;
+      top: 50%;
+    }
+
+    &.seven {
+      left: 3%;
+      top: 40%;
+    }
+
+    &.eight {
+      left: 63%;
+      top: 20%;
+    }
+
+    &.nine {
+      left: 21%;
+      top: 40%;
+    }
+
+    &.ten {
+      left: 46%;
+      top: 14%;
+    }
+
+    &.eleven {
+      right: 10%;
+      top: 25%;
+    }
+  }
+  .videoPng {
+    width: 35vh;
+    display: block;
+    position: absolute;
+
+    &.one {
+      left: 34%;
+      bottom: 28%;
+    }
+
+    & > img {
+      width: 100%;
+    }
+
+    .video {
+      position: absolute;
+      width: 94.5%;
+      height: 72.5%;
+      top: 14.7%;
+      left: 2.7%;
+      background: #08304a;
+      overflow: hidden;
+      & > video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        // left: -5%;
+        // top: -5%;
+      }
+    }
+  }
+
+  .person {
+    border-radius: 10px;
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.144);
+    background: #08304ab6;
+    position: absolute;
+    &.one {
+      left: 8%;
+      top: 32%;
+    }
+
+    &.two {
+      left: 1%;
+      top: 38%;
+    }
+
+    &.three {
+      left: 21%;
+      top: 38%;
+    }
+
+    &.four {
+      left: 18%;
+      top: 49%;
+    }
+
+    &.five {
+      right: 53%;
+      top: 68%;
+    }
+
+    &.six {
+      right: 38%;
+      top: 54%;
+    }
+
+    &.seven {
+      right: 42%;
+      top: 80%;
+    }
+
+    &.eight {
+      right: 27%;
+      top: 26%;
+    }
+
+    &.nine {
+      right: 58%;
+      top: 11%;
+    }
+
+    &.ten {
+      left: 48%;
+      top: 5%;
+    }
+
+    &.eleven {
+      left: 52%;
+      top: 18%;
+    }
+
+    &.twelve {
+      left: 72%;
+      top: 18%;
+    }
+
+    &.thirteen {
+      left: 82%;
+      top: 32%;
+    }
+  }
+
+  .energy {
+    border-radius: 10px;
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.144);
+    background: #ffffffb6;
+    color: #08304a;
+    font-weight: bold;
+    position: absolute;
+    &.one {
+      left: 12%;
+      top: 41%;
+    }
+
+    &.two {
+      right: 39%;
+      bottom: 24%;
+    }
+
+    &.three {
+      right: 13%;
+      top: 26%;
+    }
+
+    &.four {
+      left: 45%;
+      top: 5%;
+    }
+  }
+}

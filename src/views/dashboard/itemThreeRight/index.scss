@@ -1,0 +1,63 @@
+.teachersCont {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 3%;
+  .teachers {
+    width: 100%;
+    & > div {
+      display: flex;
+      align-items: center;
+      color: #00e5ff;
+      justify-content: space-around;
+      font-size: 0.12rem;
+      padding: 1.1vh 0;
+      white-space: nowrap;
+
+      .square {
+        flex: 0 0 2.5vh;
+        height: 1.5vh;
+        border-radius: 0.05rem;
+      }
+
+      & > div:nth-child(2) {
+        flex: 0 0 44%;
+        color: #fff;
+      }
+
+      & > div:nth-child(3) {
+        flex: 0 0 10%;
+      }
+
+      & > div:nth-child(4) {
+        flex: 0 0 20%;
+      }
+
+      &:nth-child(1) {
+        .square {
+          background: #eb6877;
+        }
+      }
+      &:nth-child(2) {
+        .square {
+          background: #396ce9;
+        }
+      }
+      &:nth-child(3) {
+        .square {
+          background: #ac4fd3;
+        }
+      }
+      &:nth-child(4) {
+        .square {
+          background: #e8b008;
+        }
+      }
+      &:nth-child(5) {
+        .square {
+          background: #37c6a9;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,226 @@
+.borderBottom {
+  border-bottom: 0.02rem solid #666e76;
+}
+
+.bigTitle {
+  color: #00e5ff;
+  font-size: 0.2rem;
+  text-align: center;
+  margin-bottom: 1.8vh;
+  margin-top: 0.9vh;
+}
+
+.title {
+  color: #00e5ff;
+  font-size: 0.16rem;
+  text-align: center;
+  margin-bottom: 1.8vh;
+  margin-top: 1.7vh;
+}
+
+.num {
+  color: #fff;
+  font-size: 0.25rem;
+  text-align: center;
+  margin-bottom: 1.5vh;
+
+  &.noBorder {
+    margin-bottom: 0;
+  }
+}
+
+.yz {
+  color: #ef0101;
+}
+
+.zy {
+  color: #ffa200;
+}
+
+.jg {
+  color: #ffff00;
+}
+
+
+.rader_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.rader_left {
+  height: 100%;
+  width: 50%;
+  padding: 10px;
+  display: inline-block;
+}
+
+.radar {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 0.01rem solid #abcbd8;
+  overflow: hidden;
+  background: -webkit-radial-gradient(center,
+      rgba(22, 94, 119, 0.3) 0%,
+      rgba(32, 255, 77, 0) 75%),
+    -webkit-repeating-radial-gradient(rgba(32, 255, 77, 0) 5.8%, rgba(32,
+        255,
+        77,
+        0) 18%, #abcbd8 18.6%, rgba(32, 255, 77, 0) 18.9%),
+    -webkit-linear-gradient(90deg, rgba(32, 255, 77, 0) 49.5%, #abcbd8 50%, #47d7e0 50%, rgba(32, 255, 77, 0) 50.2%),
+    -webkit-linear-gradient(0deg, rgba(32, 255, 77, 0) 49.5%, #abcbd8 50%, #47d7e0 50%, rgba(32, 255, 77, 0) 50.2%);
+}
+
+.radar::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -30%;
+  animation: blips 5s infinite;
+  animation-timing-function: linear;
+  animation-delay: 0.6s;
+}
+
+.radar::after {
+  content: " ";
+  display: block;
+  background-image: linear-gradient(44deg,
+      rgba(0, 255, 51, 0) 50%,
+      #47d7e0 100%);
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: name1 5s infinite;
+  animation-timing-function: linear;
+  transform-origin: bottom right;
+  border-radius: 100% 0 0 0;
+}
+
+@keyframes name1 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blips {
+  14% {
+    background: radial-gradient(1vmin circle at 85% 70%,
+        #ffffff 10%,
+        #a7eef2 30%,
+        rgba(255, 255, 255, 0) 100%);
+  }
+
+  14.0002% {
+    background: radial-gradient(1vmin circle at 85% 70%,
+        #ffffff 10%,
+        #a7eef2 30%,
+        rgba(255, 255, 255, 0) 100%),
+      radial-gradient(1vmin circle at 63% 82%,
+        #ffffff 10%,
+        #9be3f0 30%,
+        rgba(255, 255, 255, 0) 100%);
+  }
+
+  25% {
+    background: radial-gradient(1vmin circle at 85% 70%,
+        #ffffff 10%,
+        #a7eef2 30%,
+        rgba(255, 255, 255, 0) 100%),
+      radial-gradient(1vmin circle at 63% 82%,
+        #ffffff 10%,
+        #9be3f0 30%,
+        rgba(255, 255, 255, 0) 100%),
+      radial-gradient(1vmin circle at 80% 90%,
+        #ffffff 10%,
+        #5790a1 30%,
+        rgba(255, 255, 255, 0) 100%);
+  }
+
+  80% {
+    background: radial-gradient(1vmin circle at 85% 70%,
+        #ffffff 10%,
+        #a7eef2 30%,
+        rgba(255, 255, 255, 0) 100%),
+      radial-gradient(1vmin circle at 63% 82%,
+        #ffffff 10%,
+        #9be3f0 30%,
+        rgba(255, 255, 255, 0) 100%),
+      radial-gradient(1vmin circle at 80% 90%,
+        #ffffff 10%,
+        #5790a1 30%,
+        rgba(255, 255, 255, 0) 100%);
+  }
+
+  80.002% {
+    background: radial-gradient(1vmin circle at 85% 70%,
+        #ffffff 10%,
+        #a7eef2 30%,
+        rgba(255, 255, 255, 0) 100%),
+      radial-gradient(1vmin circle at 63% 82%,
+        #ffffff 10%,
+        #9be3f0 30%,
+        rgba(255, 255, 255, 0) 100%),
+      radial-gradient(1vmin circle at 80% 90%,
+        #ffffff 10%,
+        #5790a1 30%,
+        rgba(255, 255, 255, 0) 100%);
+  }
+
+  81% {
+    background: radial-gradient(1vmin circle at 85% 70%,
+        #ffffff 10%,
+        #a7eef2 30%,
+        rgba(255, 255, 255, 0) 100%),
+      radial-gradient(1vmin circle at 63% 82%,
+        #ffffff 10%,
+        #9be3f0 30%,
+        rgba(255, 255, 255, 0) 100%),
+      radial-gradient(1vmin circle at 80% 90%,
+        #ffffff 10%,
+        #5790a1 30%,
+        rgba(255, 255, 255, 0) 100%);
+    opacity: 1;
+  }
+
+  100% {
+    background: radial-gradient(1vmin circle at 85% 70%,
+        #ffffff 10%,
+        #a7eef2 30%,
+        rgba(255, 255, 255, 0) 100%),
+      radial-gradient(1vmin circle at 63% 82%,
+        #ffffff 10%,
+        #9be3f0 30%,
+        rgba(255, 255, 255, 0) 100%),
+      radial-gradient(1vmin circle at 80% 90%,
+        #ffffff 10%,
+        #5790a1 30%,
+        rgba(255, 255, 255, 0) 100%);
+    opacity: 0;
+  }
+}
+
+.rader_right {
+  height: 100%;
+  width: 50%;
+  padding: 10px;
+  display: inline-block;
+}
+
+.rader_detail {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}

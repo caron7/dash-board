@@ -1,0 +1,53 @@
+.contentList {
+  width: 100%;
+  height: calc(100% - 2.9vh);
+  margin: 1.45vh 0;
+  overflow: hidden;
+  .listItem {
+    width: 92%;
+    height: 5.8vh;
+    margin: 1vh auto;
+    background: rgba(10, 70, 119, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-shrink: 0;
+    position: relative;
+    padding: 0 5.5%;
+    .headImg {
+      width: 3vh;
+      height: 3vh;
+      border-radius: 100%;
+      overflow: hidden;
+      margin-right: 3%;
+      flex: 0 0 3vh;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+    .line {
+      flex: 0 0 0.01rem;
+      height: 3.1vh;
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .conts {
+      flex: auto;
+      padding-left: 10%;
+      padding-right: 5%;
+      .name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.02rem 0;
+        font-size: 0.14rem;
+      }
+      .date {
+        color: #00e5ff;
+        font-size: 0.16rem;
+        white-space: nowrap;
+        padding: 0.02rem 0;
+      }
+    }
+  }
+}

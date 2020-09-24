@@ -1,0 +1,33 @@
+.school {
+  width: 100%;
+  height: 100%;
+  font-size: 0.12rem;
+  .head {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .headImg {
+      height: 8vh;
+      width: 8vh;
+      & > img {
+        width: 100%;
+        display: block;
+      }
+    }
+    & > div:nth-child(2) {
+      margin-top: 1vh;
+    }
+  }
+  .cont {
+    height: 30%;
+    padding: 0 6%;
+    display: flex;
+    flex-wrap: wrap;
+    & > div {
+      flex: 0 0 50%;
+      text-align: center;
+    }
+  }
+}

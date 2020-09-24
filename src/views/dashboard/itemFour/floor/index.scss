@@ -1,0 +1,190 @@
+.floor {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .building {
+    position: absolute;
+    height: 17vh;
+    left: 26.7%;
+    top: 5vh;
+  }
+
+  .west {
+    position: absolute;
+    height: 2.8vh;
+    left: 0;
+    top: 2.3vh;
+  }
+
+  .south {
+    position: absolute;
+    height: 2vh;
+    bottom: 1.4vh;
+    right: 4.8%;
+  }
+
+  .parkingLot {
+    width: 1.4vh;
+    height: 2.2vh;
+    background: url("~@/assets/images/parking.png") no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 10;
+
+    .car {
+      width: 1.5vh;
+      height: 2.2vh;
+      background: url("~@/assets/images/car.png") no-repeat center;
+      background-size: 100% 100%;
+    }
+  }
+
+  .horizontal {
+    transform: rotate(-90deg);
+  }
+
+  // 上左6
+  .park27 {
+    left: 2.6vh;
+    top: 4.7%;
+  }
+
+  .park26 {
+    left: 5.2vh;
+    top: 4.7%;
+  }
+
+  .park25 {
+    left: 7.8vh;
+    top: 4.7%;
+  }
+
+  .park24 {
+    left: 10.4vh;
+    top: 4.7%;
+  }
+
+  .park23 {
+    left: 13vh;
+    top: 4.7%;
+  }
+
+  .park22 {
+    left: 15.6vh;
+    top: 4.7%;
+  }
+
+  // 上右边3
+  .park21 {
+    right: 6.4vh;
+    top: 4.7%;
+  }
+
+  .park20 {
+    right: 3.8vh;
+    top: 4.7%;
+  }
+
+  .park19 {
+    right: 1.2vh;
+    top: 4.7%;
+  }
+
+  // 右上5
+  .park8 {
+    right: 6vh;
+    top: 15%;
+  }
+
+  .park7 {
+    right: 4.5vh;
+    top: 15%;
+  }
+
+  .park6 {
+    right: 3vh;
+    top: 15%;
+  }
+
+  .park5 {
+    right: 1.5vh;
+    top: 15%;
+  }
+
+  .park4 {
+    right: 0;
+    top: 15%;
+  }
+
+  // 左5
+  .park9 {
+    left: 0%;
+    top: 25%;
+  }
+
+  .park10 {
+    left: 0%;
+    top: 30.5%;
+  }
+
+  .park11 {
+    left: 0%;
+    top: 36%;
+  }
+
+  .park12 {
+    left: 0%;
+    top: 41.5%;
+  }
+
+  .park13 {
+    left: 0%;
+    top: 47%;
+  }
+
+  // 右边3
+  .park3 {
+    right: 0%;
+    top: 37.7%;
+  }
+
+  .park2 {
+    right: 0%;
+    top: 43.2%;
+  }
+
+  .park1 {
+    right: 0%;
+    top: 48.7%;
+  }
+
+  // 下5
+  .park14 {
+    left: 12%;
+    top: 60.5%;
+  }
+
+  .park15 {
+    left: 12%;
+    top: 66%;
+  }
+
+  .park16 {
+    left: 12%;
+    top: 71.5%;
+  }
+
+  .park17 {
+    left: 12%;
+    top: 77%;
+  }
+
+  .park18 {
+    left: 12%;
+    top: 82.5%;
+  }
+
+
+
+}

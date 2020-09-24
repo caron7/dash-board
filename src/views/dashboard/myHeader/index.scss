@@ -1,0 +1,81 @@
+.myHeader {
+  height: 7.8%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-size: 0.15rem;
+
+  .left {
+    padding: 0 1.7%;
+    padding-top: 0.6vh;
+    width: 21%;
+
+    .weather {
+      display: flex;
+      align-items: center;
+
+      .weatherIcon {
+        padding-right: 4%;
+
+        & > span {
+          font-size: 0.35rem;
+        }
+      }
+
+      .weatherDetail {
+        line-height: 110%;
+
+        & > div:nth-child(1) {
+          font-size: 0.12rem;
+        }
+
+        & > div:nth-child(2) {
+          font-size: 0.12rem;
+        }
+      }
+    }
+  }
+
+  .title {
+    width: 45%;
+    height: 100%;
+    background: url("~@/assets/images/title.png") no-repeat center;
+    background-size: 100% 100%;
+    color: $normalText;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    & > img {
+      width: auto;
+      height: 32%;
+      display: block;
+      position: absolute;
+      top: 18%;
+      z-index: 1;
+    }
+  }
+
+  .right {
+    padding: 0 1.7%;
+    padding-top: 1.2vh;
+    width: 21%;
+    position: relative;
+    text-align: right;
+
+    .setting {
+      // padding-right: 15%;
+      font-size: 0.12rem;
+    }
+
+    .iconfont {
+      font-size: 0.25rem;
+      position: absolute;
+      right: 1.7vw;
+      top: 1vh;
+      cursor: pointer;
+    }
+  }
+}
