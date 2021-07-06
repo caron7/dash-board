@@ -1,7 +1,6 @@
 <template>
   <div class="dashboard">
     <myHeader></myHeader>
-
     <myContent></myContent>
   </div>
 </template>
@@ -32,8 +31,8 @@ export default {
   height: 100vh;
   // width: 1920px;
   // height: 1080px;
-  background: url("~@/assets/images/background.jpg") no-repeat center;
-  background-size: 100% 100%;
+  background: url("~@/assets/images/bg.png") no-repeat center;
+  background-size: 100% 101%;
   font-size: 0.2rem;
 }
 </style>

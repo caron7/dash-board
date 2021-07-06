@@ -20,14 +20,15 @@
 </template>
 
 <script>
-import { getParkData } from "@/api/index.js";
+import {getParkData} from "@/api/index.js";
 import pie from "./pie";
 import floor from "./floor";
+
 export default {
   name: "itemFour",
-  components: { pie, floor },
+  components: {pie, floor},
   data() {
-    return { resData: null, interval: null };
+    return {resData: {value: 11, name: 111}, interval: null};
   },
   mounted() {
     // this.getParkDataFunc();
@@ -39,12 +40,13 @@ export default {
     // clearInterval(this.interval);
   },
   methods: {
-    async getParkDataFunc() {
-      const res = await getParkData();
-      if (res.status === 200) {
-        this.resData = res.data;
-      }
-    }
+    // async getParkDataFunc() {
+    //   const res = await getParkData();
+    //   if (res.status === 200) {
+    //     // this.resData = res.data;
+    //     console.log(this.resData, 1111111111)
+    //   }
+    // }
   }
 };
 </script>

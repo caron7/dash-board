@@ -9,13 +9,13 @@
           <div class="headImg">
             <img :src="schoolPng" />
           </div>
-          <div>北师大长沙附属学校</div>
+          <div>数字经济小镇</div>
         </div>
         <div class="cont">
-          <div>老师 1232人</div>
-          <div>部门 103个</div>
-          <div>学生 3418人</div>
-          <div>班级 174个</div>
+          <div>公司 122个</div>
+          <div>部门 13个</div>
+          <div>人数 3418人</div>
+          <div>车位 1740个</div>
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import schoolPng from "@/assets/images/school.png";
+import schoolPng from "@/assets/images/company.png";
 import moment from "moment";
 export default {
   name: "itemThree",

@@ -1,6 +1,9 @@
 import Vue from "vue";
 import App from "./App";
 import router from "./router";
+import axios from  'axios'
+Vue.prototype.$http = axios
+
 
 import store from './store'
 
@@ -28,6 +31,7 @@ Vue.use(Carousel);
 Vue.use(CarouselItem);
 Vue.use(Select);
 Vue.use(Option);
+
 
 import "animate.css";
 

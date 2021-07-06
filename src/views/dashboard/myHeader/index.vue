@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="title">
-      <img :src="logo" />
+      数字小镇智慧大屏
     </div>
     <div class="right">
       <div class="setting">{{ date }} {{ time }}</div>

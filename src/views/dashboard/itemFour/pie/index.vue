@@ -1,6 +1,6 @@
 <template>
   <div class="pie">
-    <img class="piebg" :src="piebg" />
+    <img class="piebg" :src="piebg"/>
     <div class="chart">
       <div ref="picChart" class="picChart"></div>
     </div>
@@ -10,22 +10,15 @@
 <script>
 import piebg from "@/assets/images/piebg.png";
 import option from "./chart.js";
+
 export default {
   name: "pie",
   props: ["resData"],
+
   data() {
     return {
       piebg,
-      seriesData: [
-        {
-          value: 27,
-          name: "占用车位"
-        },
-        {
-          value: 0,
-          name: "空闲车位"
-        }
-      ]
+      seriesData: []
     };
   },
   watch: {
@@ -39,9 +32,17 @@ export default {
     // }
     // this.initChartData();
 
-    this.drawPie();
+    this.getData()
   },
   methods: {
+    getData() {
+      this.$http.get('static/shishi-chewei.json')
+        .then(res => {
+          this.seriesData = res.data.data
+          this.drawPie();
+        })
+        .catch(err => console.log(err))
+    },
     initChartData() {
       let data = this.resData;
       this.seriesData[0].value = data.occupyNum;
@@ -60,7 +61,7 @@ export default {
       // 基于准备好的dom，初始化echarts实例
       let myChart = this.$echarts.init(this.$refs["picChart"], "dark");
       let opts = Object.assign({}, option);
-      opts.legend.formatter = function(params) {
+      opts.legend.formatter = function (params) {
         for (let a = 0; a < _t.seriesData.length; a++) {
           if (_t.seriesData[a].name == params) {
             return params + "   " + _t.seriesData[a].value + "个";
@@ -71,11 +72,11 @@ export default {
       opts.series[0].label = {
         show: true,
         position: "center",
-        formatter: function() {
-          return _t.formatterSum();
+        formatter: function () {
+          return Number(_t.seriesData[0].value) + Number(_t.seriesData[1].value);
         },
         textStyle: {
-          fontSize: "200%",
+          fontSize: "100%",
           color: "#8f95a8"
         }
       };

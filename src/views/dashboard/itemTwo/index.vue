@@ -15,7 +15,7 @@
           :key="index"
         >
           <div class="headImg">
-            <img :src="item.img" />
+            <img src= '../../../assets/images/enter.png'  />
           </div>
           <div class="line"></div>
           <div class="conts">
@@ -67,17 +67,18 @@ export default {
       ],
     };
   },
-  watch: {
-    "$store.state.app.websocketData": function (newVal, oldVal) {
-      if (newVal.carData) {
-        if (newVal.carData.length > 1) {
-          return;
-        }
-        this.handleBtnClick(newVal.carData);
-      }
-    },
-  },
+  // watch: {
+  //   "$store.state.app.websocketData": function (newVal, oldVal) {
+  //     if (newVal.carData) {
+  //       if (newVal.carData.length > 1) {
+  //         return;
+  //       }
+  //       this.handleBtnClick(newVal.carData);
+  //     }
+  //   },
+  // },
   mounted() {
+    this.getData()
     // this.list = [];
     // setInterval(() => {
     //   this.handleBtnClick([
@@ -91,24 +92,34 @@ export default {
     // }, 5000);
   },
   methods: {
-    spliceArr(arr) {
-      return arr.splice(0, 4);
-    },
-    handleBtnClick: function (newVal) {
-      for (let item of newVal) {
-        let listData = this.spliceArr(this.list);
-        this.list = [];
-        this.$nextTick(() => {
-          this.list.unshift({
-            img: item.type == 1 ? enter : exit,
-            name: item.carNo,
-            men: item.name,
-            date: item.date,
-          });
-          this.list.push(...listData);
-        });
-      }
-    },
+    getData(){
+      this.$http.get('static/cheliang-shibie.json')
+        .then(res =>{
+          // this.details = res.data.data
+          console.log(res)
+          this.list = res.data.data
+          console.log(res)
+        })
+        .catch(err=>console.log(err))
+    }
+    // spliceArr(arr) {
+    //   return arr.splice(0, 4);
+    // },
+    // handleBtnClick: function (newVal) {
+    //   for (let item of newVal) {
+    //     let listData = this.spliceArr(this.list);
+    //     this.list = [];
+    //     this.$nextTick(() => {
+    //       this.list.unshift({
+    //         img: item.type == 1 ? enter : exit,
+    //         name: item.carNo,
+    //         men: item.name,
+    //         date: item.date,
+    //       });
+    //       this.list.push(...listData);
+    //     });
+    //   }
+    // },
   },
 };
 </script>
