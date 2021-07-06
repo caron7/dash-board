@@ -31,6 +31,7 @@ export default {
   height: 100vh;
   // width: 1920px;
   // height: 1080px;
+  
   background: url("~@/assets/images/bg.png") no-repeat center;
   background-size: 100% 101%;
   font-size: 0.2rem;
