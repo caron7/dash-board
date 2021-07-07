@@ -38,59 +38,59 @@ export default {
       rowOne: [
         {
           name: "园区占地面积",
-          value: 256,
+          value: "256",
           company: "亩",
         },
         {
           name: "建筑面积",
-          value: 431539,
+          value: "431539",
           company: "m³",
         },
         {
           name: "园区入驻企业数量",
-          value: 268,
+          value: "268",
           company: "家",
         },
         {
-          name: "2021年上半年园区产值",
-          value: 7356.48,
+          name: "上半年园区产值",
+          value: "7356.48",
           company: "万元",
         },
       ],
     };
   },
-  watch: {
-    "$store.state.app.websocketData": function (newVal, oldVal) {
-      let val = newVal;
-      if (val.earth_temperature) {
-        this.rowOne[0].value = val.earth_temperature;
-      }
-      if (val.earth_humidity) {
-        this.rowOne[1].value = val.earth_humidity;
-      }
-      if (val.earth_conductivity) {
-        this.rowOne[2].value = val.earth_conductivity;
-      }
-      if (val.earth_ph) {
-        this.rowOne[3].value = val.earth_ph;
-      }
-      // 实时数据
-      if (val.equipData) {
-        if (val.equipData.quotaCode == "earth_temperature") {
-          this.rowOne[0].value = val.equipData.quotaValue;
-        }
-        if (val.equipData.quotaCode == "earth_humidity") {
-          this.rowOne[1].value = val.equipData.quotaValue;
-        }
-        if (val.equipData.quotaCode == "earth_conductivity") {
-          this.rowOne[2].value = val.equipData.quotaValue;
-        }
-        if (val.equipData.quotaCode == "earth_ph") {
-          this.rowOne[3].value = val.equipData.quotaValue;
-        }
-      }
-    },
-  },
+  // watch: {
+  //   "$store.state.app.websocketData": function (newVal, oldVal) {
+  //     let val = newVal;
+  //     if (val.earth_temperature) {
+  //       this.rowOne[0].value = val.earth_temperature;
+  //     }
+  //     if (val.earth_humidity) {
+  //       this.rowOne[1].value = val.earth_humidity;
+  //     }
+  //     if (val.earth_conductivity) {
+  //       this.rowOne[2].value = val.earth_conductivity;
+  //     }
+  //     if (val.earth_ph) {
+  //       this.rowOne[3].value = val.earth_ph;
+  //     }
+  //     // 实时数据
+  //     if (val.equipData) {
+  //       if (val.equipData.quotaCode == "earth_temperature") {
+  //         this.rowOne[0].value = val.equipData.quotaValue;
+  //       }
+  //       if (val.equipData.quotaCode == "earth_humidity") {
+  //         this.rowOne[1].value = val.equipData.quotaValue;
+  //       }
+  //       if (val.equipData.quotaCode == "earth_conductivity") {
+  //         this.rowOne[2].value = val.equipData.quotaValue;
+  //       }
+  //       if (val.equipData.quotaCode == "earth_ph") {
+  //         this.rowOne[3].value = val.equipData.quotaValue;
+  //       }
+  //     }
+  //   },
+  // },
   methods: {
     formartDecimals(val) {
       let num = val + "";
