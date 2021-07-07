@@ -3,17 +3,17 @@
     <div class="left">
       <div class="weather">
         <div class="weatherIcon">
-          <span v-if="weatherType.indexOf('雾') != -1" class="iconfont icon-youwu"></span>
-          <span v-else-if="weatherType.indexOf('晴转多云') != -1" class="iconfont icon-qingzhuanduoyun"></span>
-          <span v-else-if="weatherType.indexOf('晴') != -1" class="iconfont icon-qingtian"></span>
-          <span v-else-if="weatherType.indexOf('雨') != -1" class="iconfont icon-baoyu"></span>
+          <!-- <span v-if="weatherType.indexOf('雾') != -1" class="iconfont icon-youwu"></span>
+          <span v-else-if="weatherType.indexOf('晴转多云') != -1" class="iconfont icon-qingzhuanduoyun"></span> -->
+          <span  class="iconfont icon-qingtian"></span>
+          <!-- <span v-else-if="weatherType.indexOf('雨') != -1" class="iconfont icon-baoyu"></span>
           <span v-else-if="weatherType.indexOf('冰') != -1" class="iconfont icon-bingbao"></span>
-          <span v-else-if="weatherType.indexOf('雪') != -1" class="iconfont icon-baoxue"></span>
-          <span v-else class="iconfont icon-yintian"></span>
+          <span v-else-if="weatherType.indexOf('雪') != -1" class="iconfont icon-baoxue"></span> -->
+          <!-- <span v-else class="iconfont icon-yintian"></span> -->
         </div>
         <div class="weatherDetail">
-          <div>{{wendu}} ℃</div>
-          <div>{{weatherType}}</div>
+          <div>31 ℃</div>
+          <div>桐乡市 晴</div>
         </div>
       </div>
     </div>
@@ -44,7 +44,7 @@ export default {
     };
   },
   mounted() {
-    this.getWeatherFunc();
+    // this.getWeatherFunc();
     this.getCurrentTime();
     clearInterval(this.myTimeDisplay);
     this.myTimeDisplay = setInterval(() => {
