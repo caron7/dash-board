@@ -48,11 +48,52 @@ export default {
   data() {
     return {
       count: 0,
-      list: [],
+      list: [
+    {
+      "img": "girl",
+      "name": "桐乡市新其远服饰有限公司",
+      "temperature": -0,
+      "date": "关门，未能检查",
+      "type": "success",
+      "alarmLever": "0"
+    },
+    {
+      "img": "girl",
+      "name": "桐乡市懿汀服饰有限公司",
+      "temperature": -0,
+      "date": "关门，未能检查",
+      "type": "success",
+      "alarmLever": "0"
+    },
+    {
+      "img": "girl",
+      "name": "张梁",
+      "temperature": "+1",
+      "date": "解决电瓶车违停问题",
+      "type": "success",
+      "alarmLever": "0"
+    },
+    {
+      "img": "girl",
+      "name": "桐乡伊瑞品服饰有限公司",
+      "temperature": "+2",
+      "date": "解决三合一问题",
+      "type": "success",
+      "alarmLever": "0"
+    },
+    {
+      "img": "girl",
+      "name": "桐乡市择衣服饰有限公司",
+      "temperature": -10,
+      "date": "存在地面脏乱等不清洁现象",
+      "type": "error",
+      "alarmLever": "0"
+    }
+  ],
     };
   },
   mounted() {
-    this.getData()
+    // this.getData()
   },
   methods:{
     getData(){
