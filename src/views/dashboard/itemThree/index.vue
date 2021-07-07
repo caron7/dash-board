@@ -9,7 +9,7 @@
           <div class="headImg">
             <img :src="schoolPng" />
           </div>
-          <div>数字经济小镇</div>
+          <div>时尚创新园</div>
         </div>
         <div class="cont">
           <div>办公人数 3500人</div>
