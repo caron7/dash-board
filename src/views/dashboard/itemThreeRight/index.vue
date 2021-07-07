@@ -1,40 +1,40 @@
 <template>
   <div class="commonItem itemThree">
     <div class="itemHeader">
-      企业规模
+      入驻企业
     </div>
     <div class="itemContent">
       <div class="teachersCont">
         <div class="teachers">
           <div>
             <div class="square"></div>
-            <div>浙江恒云智联信息科技有限公司</div>
-            <div>5人</div>
-            <div>5.88%</div>
+            <div>浙江久良时装有限公司</div>
+            <div>创新园一期</div>
+            <div>租户</div>
           </div>
           <div>
             <div class="square"></div>
-            <div>浙江恒云智联信息科技有限公司</div>
-            <div>15人</div>
-            <div>17.65%</div>
+            <div>嘉兴婉帛时装有限公司</div>
+            <div>创新园三期</div>
+            <div>业主</div>
           </div>
           <div>
             <div class="square"></div>
-            <div>浙江恒云智联信息科技有限公司</div>
-            <div>20人</div>
-            <div>23.53%</div>
+            <div>嘉兴汇仁服饰有限公司</div>
+            <div>仓储大楼</div>
+            <div>租户</div>
           </div>
           <div>
             <div class="square"></div>
-            <div>浙江恒云智联信息科技有限公司</div>
-            <div>30人</div>
-            <div>35.29%</div>
+            <div>桐乡豪跃服饰有限公司</div>
+            <div>创新园一期</div>
+            <div>租户</div>
           </div>
           <div>
             <div class="square"></div>
-            <div>浙江恒云智联信息科技有限公司</div>
-            <div>15人</div>
-            <div>17.65%</div>
+            <div>河南韩饰商贸有限公司</div>
+            <div>设计大楼</div>
+            <div>租户</div>
           </div>
         </div>
       </div>

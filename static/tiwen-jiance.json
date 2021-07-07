@@ -2,41 +2,41 @@
   "data": [
     {
       "img": "girl",
-      "name": "陌生人",
-      "temperature": 36.5,
-      "date": "2020-08-01 12:02:12",
-      "type": "success",
-      "alarmLever": "0"
-    },
-    {
-      "img": "girl",
-      "name": "陌生人",
-      "temperature": 40,
-      "date": "2020-08-01 12:02:12",
+      "name": "桐乡市亿潮服装有限公司",
+      "temperature": -10,
+      "date": "存在地面脏乱等不清洁现象",
       "type": "error",
       "alarmLever": "0"
     },
     {
       "img": "girl",
-      "name": "陌生人",
-      "temperature": 37.5,
-      "date": "2020-08-01 12:02:12",
+      "name": "桐乡市亿潮服装有限公司",
+      "temperature": -10,
+      "date": "存在有乱堆乱放现象",
+      "type": "error",
+      "alarmLever": "0"
+    },
+    {
+      "img": "girl",
+      "name": "桐乡市瀚霸服饰有限公司",
+      "temperature": "+2",
+      "date": "解决三合一问题",
       "type": "success",
       "alarmLever": "0"
     },
     {
       "img": "girl",
-      "name": "陌生人",
-      "temperature": 35.5,
-      "date": "2020-08-01 12:02:12",
+      "name": "桐乡伊瑞品服饰有限公司",
+      "temperature": "+2",
+      "date": "解决三合一问题",
       "type": "success",
       "alarmLever": "0"
     },
     {
       "img": "girl",
-      "name": "陌生人",
-      "temperature": 39.5,
-      "date": "2020-08-01 12:02:12",
+      "name": "桐乡市择衣服饰有限公司",
+      "temperature": -10,
+      "date": "存在地面脏乱等不清洁现象",
       "type": "error",
       "alarmLever": "0"
     }

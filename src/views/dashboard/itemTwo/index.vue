@@ -1,7 +1,7 @@
 <template>
   <div class="commonItem itemOne">
     <div class="itemHeader">
-      车辆识别
+      消防安全评级
       <div class="fullscreen">
         <span class="iconfont icon-quanping"></span>
       </div>
@@ -14,10 +14,10 @@
           v-for="(item, index) of list"
           :key="index"
         >
-          <div class="headImg">
+          <!-- <div class="headImg">
             <img src= '../../../assets/images/enter.png'  />
-          </div>
-          <div class="line"></div>
+          </div> -->
+          <!-- <div class="line"></div> -->
           <div class="conts">
             <div class="date">{{ item.name }}</div>
             <div class="name">

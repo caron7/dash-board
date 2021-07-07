@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="title">
-      数字小镇智慧大屏
+      时尚创新园智慧大屏
     </div>
     <div class="right">
       <div class="setting">{{ date }} {{ time }}</div>

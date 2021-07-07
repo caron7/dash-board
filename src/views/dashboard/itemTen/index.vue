@@ -1,14 +1,14 @@
 <template>
   <div class="commonItem itemTen">
-    <div class="itemHeader">土壤检测</div>
+    <div class="itemHeader">园区信息</div>
     <div class="itemContent">
       <div class="testing">
         <div class="testingContent">
           <div class="testRow">
             <div v-for="item of rowOne" :key="item.name" class="testCol">
-              <div class="icon">
+              <!-- <div class="icon">
                 <span :class="`icon-turangshidu`" class="iconfont"></span>
-              </div>
+              </div> -->
               <div class="data">
                 <div>{{item.name}}</div>
                 <div>
@@ -37,24 +37,24 @@ export default {
     return {
       rowOne: [
         {
-          name: "温度",
-          value: 0,
-          company: "℃",
+          name: "园区占地面积",
+          value: 256,
+          company: "亩",
         },
         {
-          name: "水分",
-          value: 0,
-          company: "%",
+          name: "建筑面积",
+          value: 431539,
+          company: "m³",
         },
         {
-          name: "导电率",
-          value: 0,
-          company: "uS/cm",
+          name: "园区入驻企业数量",
+          value: 268,
+          company: "家",
         },
         {
-          name: "PH值",
-          value: 0,
-          company: "ph",
+          name: "2021年上半年园区产值",
+          value: 7356.48,
+          company: "万元",
         },
       ],
     };

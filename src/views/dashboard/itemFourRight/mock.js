@@ -2,7 +2,7 @@ export const mockDataMonth = {
   legend: [],
   series: [
     {
-      name: "访客人数统计",
+      name: "销售",
       type: "line",
       data: [
         36,
@@ -77,7 +77,7 @@ export const mockDataYear = {
   legend: [],
   series: [
     {
-      name: "访客人数统计",
+      name: "税收",
       type: "line",
       data: [730, 593, 601, 604, 732, 592, 719, 606, 702, 721]
     }

@@ -66,7 +66,7 @@ export default {
       let xAxisKeys = getObjectKeys(data.lastFiveDaysPower);
       let xData = [];
       for (let item of xAxisKeys) {
-        xData.push(moment(item).format("MM/DD"));
+        xData.push(moment(item).format("YYYY/M"));
       }
       this.xAxisData = xData;
       this.seriesData[0].data = getObjectValues(data.lastFiveDaysWater);

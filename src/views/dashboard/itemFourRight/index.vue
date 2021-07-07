@@ -1,7 +1,7 @@
 <template>
   <div class="commonItem itemThree">
     <div class="itemHeader">
-      访客统计
+      销售-税收统计
       <div class="text">
         <el-select
           @change="changeType"
@@ -36,15 +36,15 @@ export default {
     return {
       chartData: null,
       interval: null,
-      selectType: "最近一月",
+      selectType: "税收",
       options: [
         {
-          value: "最近一月",
-          label: "最近一月"
+          value: "销售",
+          label: "销售"
         },
         {
-          value: "最近一年",
-          label: "最近一年"
+          value: "税收",
+          label: "税收"
         }
       ],
       xAxisData: [],
@@ -77,9 +77,9 @@ export default {
       this.getDataFunc();
     },
     getDataFunc() {
-      if (this.selectType == "最近一月") {
+      if (this.selectType == "销售") {
         this.getCountByMonthFunc();
-      } else if (this.selectType == "最近一年") {
+      } else if (this.selectType == "税收") {
         this.getCountByYearFunc();
       }
     },

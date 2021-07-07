@@ -19,4 +19,4 @@ export const queryRecentThermal = () => get(api + "/api/temp/queryRecentTemp"); 
 
 export const saveLight = params => get("http://172.16.12.232:8002/adjust/light?percent=" + params.percent + "&_=" + new Date().getTime()); // 获取温湿度数据
 
-export const getWeather = () => get("http://wthrcdn.etouch.cn/weather_mini?city=南京"); // 获取天气
+export const getWeather = () => get("http://wthrcdn.etouch.cn/weather_mini?city=嘉兴"); // 获取天气

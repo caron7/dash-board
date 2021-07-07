@@ -1,7 +1,7 @@
 <template>
   <div class="commonItem itemOne">
     <div class="itemHeader">
-      绿化环保评级
+      消防安全评级
       <div class="fullscreen">
         <span class="iconfont icon-quanping"></span>
       </div>
@@ -43,9 +43,8 @@
 </template>
 
 <script>
-import girl from "@/assets/images/girl.jpg";
 export default {
-  name: "itemOne",
+  name: "itemOne-copy",
   data() {
     return {
       count: 0,
@@ -57,7 +56,7 @@ export default {
   },
   methods:{
     getData(){
-      this.$http.get('static/tiwen-jiance.json')
+      this.$http.get('static/cheliang-shibie.json')
         .then(res =>{
           // this.details = res.data.data
           console.log(res)

@@ -29,6 +29,7 @@ export default {
   color: #fff;
   width: 100vw;
   height: 100vh;
+  /* height: calc( 100vw * 9/3); */
   // width: 1920px;
   // height: 1080px;
   

@@ -12,10 +12,10 @@
           <div>数字经济小镇</div>
         </div>
         <div class="cont">
-          <div>公司 122个</div>
-          <div>部门 13个</div>
-          <div>人数 3418人</div>
-          <div>车位 1740个</div>
+          <div>办公人数 3500人</div>
+          <div>企业办公人数 3200人</div>
+          <div>20年新增人数 500人</div>
+          <div>21年新增人数 300个</div>
         </div>
       </div>
     </div>

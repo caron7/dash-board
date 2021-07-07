@@ -49,7 +49,7 @@
 <script>
 // import bim from "@/assets/images/bim.jpg";
 import itemOne from "@/views/dashboard/itemOne";
-import itemTwo from "@/views/dashboard/itemTwo";
+import itemTwo from "@/views/dashboard/itemOne-copy";
 import itemThree from "@/views/dashboard/itemThree";
 import itemThreeRight from "@/views/dashboard/itemThreeRight";
 import itemFour from "@/views/dashboard/itemFour";
